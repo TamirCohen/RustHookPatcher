@@ -15,6 +15,8 @@ pub enum GdbCommand{
     Quit(),
     WriteU32(u64, u32)
 }
+//TODO: Add write bytes
+// TODO: add config or somehing
 
 impl GdbProcess{
     fn execute(gdb_executable:&str) -> GdbProcess{
